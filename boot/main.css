@@ -1,0 +1,23 @@
+.mine {
+  font-size: 30px;
+  border: blue solid 10px;
+  border-radius: 50%;
+  padding: 15px 15px;
+}
+
+.seventh-slide-img {
+  background-color: blue;
+  overflow: hidden;
+}
+
+.seventh-slide:hover .seventh-slide-img img {
+  transform: scale(1.2);
+}
+
+.seventh-slide img {
+  transition: all 1s;
+}
+
+.im {
+  overflow: hidden;
+}

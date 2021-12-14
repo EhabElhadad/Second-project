@@ -1,0 +1,858 @@
+html{
+    font-family: sans-serif;
+}
+
+
+
+
+.load{
+    background-color: black;
+    color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-ul li{
+    font-size: 50px;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.first-section
+{
+    background-image: url(../bg.jpg);
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-size: 100% 100%;
+    height: 700px;
+    
+}
+
+.fa-arrow-alt-circle-up{
+    color: black;
+    font-size: 30px;
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    display: none;
+}
+
+
+.nav
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0px 50px;
+    padding-top: 30px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    
+    
+}
+
+.nav ul
+{
+    display: flex;
+    
+
+}
+
+.nav li
+{
+    list-style-type: none;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.nav a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.caption
+{
+   
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    position: relative;
+    top: 15%;
+    
+}
+
+
+
+
+
+
+
+.caption a
+{
+    font-size: 30px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    padding: 0 5px;
+    color: rgba(128, 128, 128, 0.5);
+    
+    
+
+}
+
+.caption h1
+{
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 10px 0;
+     
+}
+
+.caption h2
+{
+    padding: 30px 0;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.caption h2::after
+{
+    content: "";
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transition: all 5s;
+    
+
+}
+
+
+@keyframes test {
+    0% {content:""}
+    30% {content: "I Am Developer";}
+    70% {content: "I Am Designer";}
+    100% {content: "I Am Ehab Elhadad";}
+    
+}
+
+
+
+/* End of First section ------------------------------------------------------------------------------ */
+
+
+
+
+/* 
+.second-section
+{
+    background-color:rgb(233, 227, 227);
+    display: flex;
+    justify-content: left; 
+}
+
+
+.second-section-img
+{
+    
+    width: 40%;
+    margin: 50px;
+    
+}
+
+.second-section-img img
+{
+    width: 100%;
+    
+}
+
+.second-section-info
+{
+
+    width: 60%;
+    margin: 50px;
+}
+
+
+.second-section-info span
+{
+    font-weight: bold;
+} 
+
+
+
+
+
+
+.loading
+{
+    background-color: rgb(37, 37, 37);
+    width: 80%;
+    height: 25px;
+    font-weight: 700;
+    overflow: hidden;
+    
+}
+
+
+.loading-name
+{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    width: 60%;
+    height: 20px;
+    font-weight: 700;
+    float: left;
+    padding-left: 10px;
+}
+
+.loading-number
+{
+    background-color:whitesmoke;
+    float: right;
+    width: 20%;
+}
+
+
+.loading-2
+{
+    background-color: rgb(37, 37, 37);
+    width: 80%;
+    height: 25px;
+    font-weight: 700;
+    overflow: hidden;
+    margin: 10px 0;
+    
+}
+
+
+.loading-2-name
+{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    width: 60%;
+    height: 20px;
+    font-weight: 700;
+    float: left;
+    padding-left: 10px;
+}
+
+.loading-2-number
+{
+    background-color:whitesmoke;
+    float: right;
+    width: 40%;
+}
+
+
+.loading-3
+{
+    background-color: rgb(37, 37, 37);
+    width: 70%;
+    height: 25px;
+    font-weight: 700;
+    overflow: hidden;
+    margin: 10px 0;
+    
+}
+
+
+.loading-3-name
+{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    width: 60%;
+    height: 20px;
+    font-weight: 700;
+    float: left;
+    padding-left: 10px;
+}
+
+.loading-3-number
+{
+    background-color:whitesmoke;
+    float: right;
+    width: 20%;
+}
+
+
+.clr
+{
+    clear: both;
+}
+
+
+
+.second-section .btn1 ,.btn2
+{
+border-radius: 10%;
+padding: 10px 25px;
+margin-top: 40px;
+}
+
+.second-section .btn1
+{
+    background-color: rgb(37, 37, 37);
+    color: white;
+    
+}
+
+.second-section .btn1:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.second-section .btn2:hover
+{
+background-color: rgb(37, 37, 37);
+color: white;
+}
+
+*/
+
+
+/* End of Second section ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+.third-section
+{
+    background-color: rgb(219, 213, 213);
+    
+  
+}
+
+.third-section h1
+{
+    text-align: center;
+    font-weight: 900;
+    padding: 50px;
+    
+}
+
+
+.services
+{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+.service-1
+{
+    
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+    margin: 10px;
+    
+}
+
+.icon
+{
+    
+    text-align: center;
+    margin: 20px 0;
+}
+
+.service-1 a
+{
+ font-size: 30px;
+ text-decoration: none;
+ color: black;
+ border: solid 5px gray transparent;
+ border-radius: 50%;
+ padding: 10px 15px;
+ background-color: rgb(236, 234, 234);
+
+}
+
+.service-1 a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+
+
+.service-1 h5
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.service-1 p
+{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/* End of Third section -------------------------------------------------------------------------------  */
+
+
+
+
+
+.fourth-section
+{
+
+    width: 90%;
+    margin: auto;
+    
+  
+}
+
+.fourth-section-caption
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+
+.fourth-section h1
+{
+    text-align: center;
+    margin: 50px;
+    font-weight: bold;
+   
+
+}
+
+.fourth-section a
+{
+    
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.links
+{
+    margin:50px auto;
+    width: 25%;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.links::after
+{
+    content: "";
+    background-color: black;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 30px;
+    left: 2%;
+}
+
+
+
+
+.portfolio
+{
+    
+    position: relative;
+    width: 27%;
+    overflow: hidden;
+    
+}
+
+
+
+.portfolio img
+{
+width: 100%;
+padding: 15px 0;
+
+}
+
+
+
+.layer
+{
+    background-color: white;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    opacity: 0;
+  
+}
+
+.layer h6
+{
+    margin: 20px;
+    position: relative;
+    top: -15px;
+    transition: all 0.5s;
+    
+    
+}
+
+.layer a
+{
+    
+    border:solid 1px black;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: relative;
+    top: 15px;
+    transition: all 0.5s;
+   
+    
+}
+
+
+
+.layer a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+
+.portfolio:hover .layer
+{
+opacity: 1;
+
+}
+
+.portfolio:hover .layer h6
+{
+top: 0;
+}
+
+.portfolio:hover .layer a
+{
+    top: 0;
+}
+
+/* End of fourth section --------------------------------------------------------------------------- */
+
+
+/* 
+.fifth-section
+{
+    background-color:rgb(236, 234, 234);
+    margin: 50px 0;
+    text-align: center;
+    height: 500px;
+}
+
+.fifth-section h1
+{
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.fifth-section img
+{
+    width: 100px;
+    border-radius: 50%;
+    
+    
+}
+
+.fifth-section p
+{
+    width: 50%;
+    margin: auto;
+    line-height: 30px;
+    
+}
+
+
+.fifth-section li
+{
+
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.fifth-section .carousel-inner
+{
+
+    padding: 50px 0;
+} */
+
+
+
+/* End of Fifth section -------------------------------------------------------------------------------- */
+
+
+
+.fifth-section
+{
+    
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.fifth-section i
+{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.fifth-section-1 h1
+{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.fifth-section h4
+{
+text-align: center;
+}
+
+
+/* End of sexth section -------------------------------------------------------------------------------- */
+
+
+
+
+
+.seventh-container
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+
+
+.seventh-section h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.seventh-slide
+{
+    width: 33%;
+    padding: 15px;
+    
+}
+
+
+.seventh-slide-info
+{
+    background-color: cornsilk;
+}
+
+
+.seventh-slide img
+{
+     width: 100%;
+}
+
+
+.seventh-slide img:hover
+{
+transform: scale(1.1);
+}
+
+
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.carousel-control-prev{
+    width: 50px;
+}
+
+.carousel-control-next{
+    width: 50px;
+}
+
+/* --------------------------End of seventh section------------------------ */
+
+
+.eighth-section
+{
+    
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(247, 245, 245);
+}
+
+.eighth-section h1
+{
+    margin: 30px;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: 900;
+}
+
+.eighth-section a
+{
+    font-size: 25px;
+    background-color: rgb(236, 233, 233);
+    color: black;
+    border-radius: 50%;
+    padding: 15px 20px;
+    
+}
+
+
+.eighth-section a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.eighth-caption
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+    
+}
+
+
+.eighth-section h6
+{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.eighth-caption p
+{
+    font-size: 17px;
+}
+
+
+input
+{
+    width: 40%;
+    height: 40px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    margin: 15px 10px ;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    
+    
+}
+
+button
+{
+    background-color: black;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 5%;
+    margin-top: 15px;
+    
+}
+
+button:hover
+{
+    background-color:white;
+    color: black;
+    
+}
+
+textarea
+{
+    background-color: rgb(219, 219, 219);
+    border: none;
+}
+
+
+footer
+{
+    background-color: rgb(44, 42, 42);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(197, 194, 194);
+
+}
